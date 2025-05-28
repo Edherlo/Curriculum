@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Experiencia Laboral</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <!-- Sidebar -->
+  <aside class="sidebar">
+    <div class="sidebar-content">
+      <div class="foto-perfil">
+        <label for="input-foto">
+          <img id="preview-imagen" src="public/perfil.webp" alt="Foto de perfil" />
+        </label>
+        <input type="file" id="input-foto" accept="image/*" />
+      </div>
+      <h2>Hernan Edherlo Reyes Alcantara</h2>
+      <nav class="navegacion">
+        <a href="index.html">Inicio</a>
+        <a href="contacto.html">Contacto</a>
+        <a href="escolaridad.html">Escolaridad</a>
+        <a href="experiencia.html" class="activo">Experiencia</a>
+        <a href="acerca.html">Acerca de mí</a>
+      </nav>
+    </div>
+  </aside>
+
+  <!-- Contenido principal -->
+  <main class="contenido-principal">
+    <h1 class="titulo-seccion">Experiencia Laboral</h1>
+
+    <div class="tarjeta tarjeta-flex">
+      <div class="tarjeta-texto">
+        <h2>Técnico en reparación celular</h2>
+        <p class="empresa"><strong>Hospicel, Calvillo, Aguascalientes</strong></p>
+        <p class="fecha">Mar 2022 - Mar 2023</p>
+        <ul>
+          <li>Reparación de hardware de diferentes equipos celulares.</li>
+          <li>Liberación, desbloqueo y cambios de IMEI en múltiples dispositivos.</li>
+          <li>Revisión, validación y filtrado de equipos para garantías.</li>
+        </ul>
+      </div>
+      <div class="tarjeta-imagen">
+        <img src="public/cel.webp" alt="Imagen reparación celular" />
+      </div>
+    </div>
+
+    <div class="tarjeta tarjeta-flex">
+      <div class="tarjeta-texto">
+        <h2>Prácticas Profesionales</h2>
+        <p class="empresa"><strong>Cool Pada</strong></p>
+        <p class="fecha">Ago 2023 - Dic 2024</p>
+        <ul>
+          <li>Reparación de red doméstica.</li>
+          <li>Reinstalación del sistema de punto de venta y registro de bases de datos.</li>
+        </ul>
+      </div>
+      <div class="tarjeta-imagen">
+        <img src="public/cool.webp" alt="Imagen redes prácticas profesionales" />
+      </div>
+    </div>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>

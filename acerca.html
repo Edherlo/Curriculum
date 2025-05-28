@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Acerca de mí</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <!-- Sidebar -->
+  <aside class="sidebar">
+    <div class="sidebar-content">
+      <div class="foto-perfil">
+        <label for="input-foto">
+          <img id="preview-imagen" src="public/perfil.webp" alt="Foto de perfil" />
+        </label>
+        <input type="file" id="input-foto" accept="image/*" />
+      </div>
+      <h2>Hernan Edherlo Reyes Alcantara</h2>
+      <nav class="navegacion">
+        <a href="index.html">Inicio</a>
+        <a href="contacto.html">Contacto</a>
+        <a href="escolaridad.html">Escolaridad</a>
+        <a href="experiencia.html">Experiencia</a>
+        <a href="acerca.html" class="activo">Acerca de mí</a>
+      </nav>
+    </div>
+  </aside>
+
+  <!-- Contenido principal -->
+  <main class="contenido-principal">
+    <h1 class="titulo-seccion">Mi Historia</h1>
+    
+    <div class="tarjeta tarjeta-flex">
+      <div class="tarjeta-texto">
+        <h2>Infancia</h2>
+        <p>Desde pequeño mostré interés por entender cómo funcionan las cosas. Siempre desarmando celulares, soldando componentes raros y jugando videojuegos.</p>
+      </div>
+      <div class="tarjeta-imagen">
+        <img src="public/infancia.webp" alt="Imagen infancia">
+      </div>
+    </div>
+
+    <div class="tarjeta tarjeta-flex">
+      <div class="tarjeta-texto">
+        <h2>2015 - 2020</h2>
+        <p>En la secundaria y preparatoria, me enfoqué en la programación y en aprender sobre diferentes y nuevas tecnologías.</p>
+      </div>
+      <div class="tarjeta-imagen">
+        <img src="public/estudiante.webp" alt="Imagen estudios">
+      </div>
+    </div>
+
+    <div class="tarjeta tarjeta-flex">
+      <div class="tarjeta-texto">
+        <h2>2022 - Actualidad</h2>
+        <p>Estudio ingeniería en sistemas computacionales y me apasiona saber lo que puedo lograr.</p>
+      </div>
+      <div class="tarjeta-imagen">
+        <img src="public/universidad.webp" alt="Imagen universidad">
+      </div>
+    </div>
+
+    <div class="tarjeta tarjeta-flex">
+      <div class="tarjeta-texto">
+        <h2>Futuro</h2>
+        <p>Mi objetivo lo tengo claro: poder ayudar a innovar a las empresas en México ofreciendo servicios de automatización y digitalización de sistemas y herramientas de IT.</p>
+      </div>
+      <div class="tarjeta-imagen">
+        <img src="public/futuro.webp" alt="Imagen futuro">
+      </div>
+    </div>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>

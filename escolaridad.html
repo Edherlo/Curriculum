@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Escolaridad</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <!-- Sidebar -->
+  <aside class="sidebar">
+    <div class="sidebar-content">
+      <div class="foto-perfil">
+        <label for="input-foto">
+          <img id="preview-imagen" src="public/perfil.webp" alt="Foto de perfil" />
+        </label>
+        <input type="file" id="input-foto" accept="image/*" />
+      </div>
+      <h2>Hernan Edherlo Reyes Alcantara</h2>
+      <nav class="navegacion">
+        <a href="index.html">Inicio</a>
+        <a href="contacto.html">Contacto</a>
+        <a href="escolaridad.html" class="activo">Escolaridad</a>
+        <a href="experiencia.html">Experiencia</a>
+        <a href="acerca.html">Acerca de mí</a>
+      </nav>
+    </div>
+  </aside>
+
+  <!-- Contenido principal -->
+  <main class="contenido-principal">
+    <h1 class="titulo-seccion">Formación Académica</h1>
+
+    <div class="tarjeta tarjeta-flex">
+      <div class="tarjeta-texto">
+        <h2>Ingeniería en Sistemas Computacionales</h2>
+        <p class="empresa"><strong>Universidad Politécnica de Aguascalientes</strong></p>
+        <p class="fecha">Actualidad</p>
+        <ul>
+          <li>Enfoque en desarrollo web, bases de datos, estructuras de datos y redes.</li>
+        </ul>
+      </div>
+      <div class="tarjeta-imagen">
+        <img src="public/upa.webp" alt="Imagen de ingeniería" />
+      </div>
+    </div>
+
+    <div class="tarjeta tarjeta-flex">
+      <div class="tarjeta-texto">
+        <h2>Bachillerato Tecnológico</h2>
+        <p class="empresa"><strong>Centro de Bachillerato Tecnológico Agropecuario No. 61</strong></p>
+        <p class="fecha">Finalizado</p>
+        <ul>
+          <li>Técnico en Informática con conocimientos en programación básica, soporte técnico y administración.</li>
+        </ul>
+      </div>
+      <div class="tarjeta-imagen">
+        <img src="public/cbta.webp" alt="Imagen de bachillerato" />
+      </div>
+    </div>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
+

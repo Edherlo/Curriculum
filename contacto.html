@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Contacto</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <!-- Sidebar -->
+  <aside class="sidebar">
+    <div class="sidebar-content">
+      <div class="foto-perfil">
+        <label for="input-foto">
+          <img id="preview-imagen" src="public/perfil.webp" alt="Foto de perfil" />
+        </label>
+        <input type="file" id="input-foto" accept="image/*" />
+      </div>
+      <h2>Hernan Edherlo Reyes Alcantara</h2>
+      <nav class="navegacion">
+        <a href="index.html">Inicio</a>
+        <a href="contacto.html" class="activo">Contacto</a>
+        <a href="escolaridad.html">Escolaridad</a>
+        <a href="experiencia.html">Experiencia</a>
+        <a href="acerca.html">Acerca de mí</a>
+      </nav>
+    </div>
+  </aside>
+
+  <!-- Contenido principal -->
+  <main class="contenido-principal">
+    <section class="tarjeta">
+      <h1>Contacto</h1>
+      <p>¿Quieres ponerte en contacto conmigo? Completa el siguiente formulario o usa mis redes sociales.</p>
+
+      <form>
+        <input type="text" placeholder="Tu nombre" required>
+        <input type="email" placeholder="Tu correo electrónico" required>
+        <textarea placeholder="Escribe tu mensaje aquí..." rows="5" required></textarea>
+        <button type="submit" class="btn">Enviar</button>
+      </form>
+
+      <div class="info-contacto">
+        <p><strong>Email:</strong> up220869@alumnos.upa.edu.mx</p>
+        <p><strong>Teléfono:</strong> +52 495 195 3643</p>
+        <p><strong>GitHub:</strong> <a href="https://github.com/Edherlo" target="_blank">https://github.com/Edherlo</a></p>
+      </div>
+    </section>
+  </main>
+</body>
+</html>
