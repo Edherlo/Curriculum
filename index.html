@@ -1,4 +1,4 @@
-  <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="es">
 <head>
   <meta charset="UTF-8" />
@@ -7,40 +7,44 @@
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
+
+  <!-- Banner con imagen -->
+  <div class="banner">
+    <img src="public/banner.webp" alt="Banner" />
+  </div>
+
+  <!-- Contenedor principal tipo seccion pantalla completa -->
   <div class="container">
     <header>
-      
-      <!-- Foto de perfil circular -->
-<!-- Foto de perfil circular con imagen por defecto -->
       <div class="foto-perfil">
-      <label for="input-foto">
-      <img id="preview-imagen" src="public/perfil.webp" alt="Foto de perfil" />
-      </label>
-      <input type="file" id="input-foto" accept="image/*" />
+        <label for="input-foto">
+          <img id="preview-imagen" src="public/perfil.webp" alt="Foto de perfil" />
+        </label>
+        <input type="file" id="input-foto" accept="image/*" />
       </div>
 
-
-      <!-- Nombre y descripción -->
       <div>
         <h1>Hernan Edherlo Reyes Alcantara</h1>
-        <p class="descripcion">Soy un Estudiante de Octavo cuatrimestre de Ingenieria en Ssitemas Computacionales, me apaciona la tegnologia aprender de ella y mejorarla.</p>
+        <p class="descripcion">
+          Soy un estudiante de octavo cuatrimestre de Ingeniería en Sistemas Computacionales. Me apasiona la tecnología, aprender de ella y mejorarla.
+        </p>
       </div>
     </header>
 
-    <nav class="botones-navegacion">
-      <a href="acerca.html" class="btn">Acerca de Mí</a>
-      <a href="contacto.html" class="btn">Contacto</a>
-      <a href="escolaridad.html" class="btn">Escolaridad</a>
-      <a href="experiencia.html" class="btn">Experiencia Laboral</a>
+    <!-- Navegación en círculo -->
+    <nav class="botones-circulo">
+      <a href="acerca.html" class="btn-circular">Acerca</a>
+      <a href="contacto.html" class="btn-circular">Contacto</a>
+      <a href="escolaridad.html" class="btn-circular">Escolaridad</a>
+      <a href="experiencia.html" class="btn-circular">Experiencia</a>
     </nav>
 
     <section class="loquera">
-      <p>Ubicación: Aguascalientes,Mexico</p>
+      <p>Ubicación: Aguascalientes, México</p>
     </section>
-
-
   </div>
 
   <script src="script.js"></script>
 </body>
 </html>
+

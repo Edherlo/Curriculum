@@ -1,4 +1,8 @@
 /* Estilos generales */
+* {
+  box-sizing: border-box;
+}
+
 body {
   margin: 0;
   font-family: Arial, sans-serif;
@@ -13,17 +17,20 @@ body {
   padding: 30px;
   border-radius: 10px;
   box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
 }
 
-/* Estilo del header con imagen al lado del nombre */
+/* Header con imagen al lado del nombre */
 header {
   display: flex;
   align-items: center;
   gap: 20px;
+  flex-wrap: wrap;
   margin-bottom: 30px;
 }
 
-/* Contenedor circular para la imagen */
 .foto-perfil {
   position: relative;
   width: 120px;
@@ -42,7 +49,6 @@ header {
   display: block;
 }
 
-/* Overlay para indicar acción al pasar el mouse */
 .foto-perfil::after {
   content: "Subir foto";
   position: absolute;
@@ -64,7 +70,6 @@ header {
   opacity: 1;
 }
 
-/* Oculta el input de tipo file */
 #input-foto {
   display: none;
 }
@@ -100,20 +105,13 @@ header {
 
 .btn:hover {
   background-color: #666;
-
-}
-body {
-  display: flex;
-  font-family: Arial, sans-serif;
-  margin: 0;
-  background-color: #f1f5f9;
 }
 
 /* Sidebar */
 .sidebar {
   width: 250px;
   background-color: #ffffff;
-  box-shadow: 2px 0 5px rgba(0,0,0,0.1);
+  box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
   height: 100vh;
   padding: 1rem;
   position: fixed;
@@ -125,7 +123,7 @@ body {
   align-items: center;
 }
 
-.foto-perfil img {
+.sidebar .foto-perfil img {
   width: 100px;
   border-radius: 50%;
   margin-bottom: 1rem;
@@ -153,7 +151,7 @@ body {
 .tarjeta {
   background-color: #ffffff;
   border-radius: 12px;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
   padding: 2rem;
   max-width: 700px;
 }
@@ -212,24 +210,126 @@ form textarea {
   object-fit: cover;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
 }
-.container {
-  width: 100%;
-  max-width: 1000px;
-  margin: auto;
-}.container {
-  display: flex;
-  flex-wrap: wrap;
-}
-.item {
-  flex: 1 1 300px;
-}
+
 img {
   max-width: 100%;
   height: auto;
 }
+
+/* Responsive */
 @media (max-width: 768px) {
-  .nav-menu {
+  .container {
+    padding: 20px;
+    margin: 20px;
+  }
+
+  header {
     flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .contenido-principal {
+    margin-left: 0;
+    padding: 1rem;
+  }
+
+  .sidebar {
+    width: 100%;
+    height: auto;
+    position: relative;
+    box-shadow: none;
+    margin-bottom: 1rem;
+  }
+
+  .tarjeta {
+    padding: 1rem;
+  }
+
+  .tarjeta-flex {
+    flex-direction: colum
   }
 }
+/* Banner con imagen */
+.banner {
+  width: 100%;
+  height: 200px;
+  overflow: hidden;
+}
 
+.banner img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Contenedor ocupa toda la pantalla menos el banner */
+.container {
+  min-height: calc(100vh - 200px);
+  background-color: #D3D3D3; /* azul cielo fresco */
+  padding: 40px 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Botones circulares en círculo */
+.botones-circulo {
+  position: relative;
+  width: 250px;
+  height: 250px;
+  margin: 40px auto;
+}
+
+.btn-circular {
+  position: absolute;
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  background-color: #87CEEB;
+  color: #fff;
+  text-align: center;
+  line-height: 80px;
+  font-weight: bold;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+}
+
+.btn-circular:hover {
+  background-color: #01579b;
+}
+
+/* Posiciones en círculo */
+.btn-circular:nth-child(1) { top: 0; left: 85px; }
+.btn-circular:nth-child(2) { top: 85px; left: 170px; }
+.btn-circular:nth-child(3) { top: 170px; left: 85px; }
+.btn-circular:nth-child(4) { top: 85px; left: 0; }
+
+/* Resto del diseño existente */
+.descripcion {
+  font-style: italic;
+  color: #333;
+}
+
+.foto-perfil {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  overflow: hidden;
+  border: 3px solid #ccc;
+  margin-bottom: 20px;
+}
+
+.foto-perfil img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
