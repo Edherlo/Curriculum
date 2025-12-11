@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Conocimeintos</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <!-- Sidebar -->
+  <aside class="sidebar">
+    <div class="sidebar-content">
+      <div class="foto-perfil">
+        <label for="input-foto">
+          <img id="preview-imagen" src="public/perfil.webp" alt="Foto de perfil" />
+        </label>
+        <input type="file" id="input-foto" accept="image/*" />
+      </div>
+      <h2>Hernan Edherlo Reyes Alcantara</h2>
+      <nav class="navegacion">
+        <a href="index.html">Inicio</a>
+        <a href="contacto.html">Contacto</a>
+        <a href="escolaridad.html">Escolaridad</a>
+        <a href="experiencia.html">Experiencia</a>
+        <a href="acerca.html">Acerca de mí</a>
+        <a href="habilidades y conocimientos.html" class="activo">Habilidades y Conocimientos</a>
+      </nav>
+    </div>
+  </aside>
+
+  <!-- Contenido principal -->
+  <main class="contenido-principal">
+    <h1 class="titulo-seccion">Conocimientos</h1>
+    
+    <div class="tarjeta tarjeta-flex">
+      <div class="tarjeta-texto">
+        <h2>Base de datos</h2>
+        <p>Tengo conocimiento y experiencia practica en el diseño e implementación de base de datos relacionales y no relaciones.
+           He trabajado en proyectos escolares con Sqlite y MySQL,oracle, mongo db creando base de datos eficientes.
+           De manera oficial he manejado base de datos en access y SAPHana</p> 
+        </p>
+      </div>
+      <div class="tarjeta-imagen">
+        <img src="public/base.webp" alt="Imagen infancia">
+      </div>
+    </div>
+
+    <div class="tarjeta tarjeta-flex">
+      <div class="tarjeta-texto">
+        <h2>Redes</h2>
+        <p>Conocimiento y experiencia laboral en redes Lan, configuracion de routers y switch. Manejo de direccione Ipv4 y Ipv6.</p>
+      </div>
+      <div class="tarjeta-imagen">
+        <img src="public/cisco.webp" alt="Imagen estudios">
+      </div>
+    </div>
+
+    <div class="tarjeta tarjeta-flex">
+      <div class="tarjeta-texto">
+        <h2>Programacion</h2>
+        <p>Conocimiento academico en lenguajes de desarollo para diferentes entornos: 
+            Python(manejode datos, proyectos de IA)
+            JavaScrip: node.js (backend) y React (frontend web),TypeScript (frontend web).
+            HTML y CSS (desarrollo web).
+            Java (aplicaciones de escritorio y android)
+        </p>
+      </div>
+      <div class="tarjeta-imagen">
+        <img src="public/pp.webp" alt="Imagen universidad">
+      </div>
+    </div>
+
+    <div class="tarjeta tarjeta-flex">
+      <div class="tarjeta-texto">
+        <h2>Hadware</h2>
+        <p>Conocimento y expeciencia laboral en manedo de diverso esquipos de hadware desde dispositivos moviles, equipos de computo destok, laptops, Impresoras.</p>
+      </div>
+      <div class="tarjeta-imagen">
+        <img src="public/hadware.webp" alt="Imagen futuro">
+      </div>
+    </div>
+        <div class="tarjeta tarjeta-flex">
+      <div class="tarjeta-texto">
+        <h2>Nube</h2>
+        <p>Maejo de diferentes tegnologias para el despliegue de aplicacioness.
+           Manejo de azure para control de sistema de reconocimiento facial.
+        </p>
+      </div>
+      <div class="tarjeta-imagen">
+        <img src="public/nuve.webp" alt="Imagen futuro">
+      </div>
+    </div>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
