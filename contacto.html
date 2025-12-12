@@ -34,33 +34,19 @@
       <h1>Contacto</h1>
       <p>¿Quieres ponerte en contacto conmigo? Completa el siguiente formulario o usa mis redes sociales.</p>
 
-      <!-- ============================================ -->
-      <!-- FORMULARIO ACTUALIZADO CON NETLIFY FORMS     -->
-      <!-- ============================================ -->
-      <form name="contacto" 
-            method="POST" 
-            data-netlify="true" 
-            netlify-honeypot="bot-field"
-            action="gracias.html">
+      <!-- FORMULARIO SIMPLE PARA NETLIFY FREE -->
+      <form name="contacto" method="POST" data-netlify="true">
+        <input type="hidden" name="form-name" value="contacto" />
         
-        <!-- Campo oculto requerido por Netlify -->
-        <input type="hidden" name="form-name" value="contacto">
-        
-        <!-- Campo honeypot anti-spam (oculto) -->
-        <p style="display: none;">
-          <label>No llenes este campo: <input name="bot-field" /></label>
-        </p>
-
-        <!-- Tus campos originales con atributo 'name' agregado -->
         <input type="text" 
                name="nombre" 
                placeholder="Tu nombre" 
-               required>
+               required />
         
         <input type="email" 
                name="email" 
                placeholder="Tu correo electrónico" 
-               required>
+               required />
         
         <textarea name="mensaje" 
                   placeholder="Escribe tu mensaje aquí..." 
@@ -77,8 +63,8 @@
     </section>
   </main>
 
-  <!-- Script para la foto de perfil -->
   <script src="script.js"></script>
 </body>
 </html>
+
 
